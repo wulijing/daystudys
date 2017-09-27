@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="all">
+            <div class="top">
+                <p><img src="img/logo_01.png" alt=""></p>
+                <p>设备测试预约系统</p>
+            </div>
+            <div class="center">
+                <p><span><img src="img/icon_01.png" alt=""></span><input type="text" placeholder="请输入手机号码"></p>
+                <p><span><img src="img/icon_03.png" alt=""></span><input type="text" placeholder="请输入手机号码"></p>
+            </div>
+            <div class="down"><button>登录账号，开始预约</button></div>
+        </div>
+    </div>
+    <script>
+        var node = ''
+        ,   wrap = document.getElementsByClassName('wrap');
+        // setTimeout(function(){
+           node+=`
+           <div class="all">
+                <div class="top">
+                    <p><img src="img/logo_01.png" alt=""></p>
+                    <p>设备测试预约系统</p>
+                </div>
+                <div class="center">
+                    <p><span><img src="img/icon_01.png" alt=""></span><input type="text" placeholder="请输入手机号码"></p>
+                    <p><span><img src="img/icon_03.png" alt=""></span><input type="text" placeholder="请输入手机号码"></p>
+                </div>
+                <div class="down"><button>登录账号，开始预约</button></div>
+            </div>
+           `;
+           wrap.html=node;
+        // },2000)
+    </script>
+</body>
+</html>
